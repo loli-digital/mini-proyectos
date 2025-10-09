@@ -199,26 +199,26 @@ footer {
             font-family: inherit;
             font-size: inherit;
             color: inherit;
-            transition: all 200ms linear;
-
-            &:hover {
-                transform: none;
-            }
 
             .icon__github,
             .icon__linkedin {
                 width: 4rem;
                 height: 4rem;
-                fill: var(--color-3);
-                transition: fill .2s linear;
+                border: 1px solid var(--color-6);
+                background-color: var(--color-6);
+                transition: transform .2s linear;
 
                 &:hover {
-                    fill: var(--color-5);
+                    transform: scale(1.2);
                 }
             }
 
             .icon__github {
                 border-radius: 100px;
+            }
+
+            .icon__linkedin {
+                border-radius: 5px;
             }
         }
 
