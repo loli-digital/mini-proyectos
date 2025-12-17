@@ -67,6 +67,12 @@ footer {
 
 header {
 
+    h1,
+    p {
+        color: var(--color-3);
+        text-shadow: 0 0 10px var(--color-4);
+    }
+
     h1 {
         padding-bottom: 3rem;
         font-family: var(--font-family-1);
@@ -74,6 +80,7 @@ header {
 
     p {
         font-family: var(--font-family-2);
+        font-size: 2rem;
     }
 
     a {
@@ -84,7 +91,7 @@ header {
 
 
 main {
-    padding: 5rem 0;
+    padding: 10rem 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -125,7 +132,8 @@ main {
         }
 
         p {
-            color: var(--color-6);
+            color: var(--color-3);
+            text-shadow: 0 0 10px var(--color-4);
         }
 
         .habilities {
@@ -201,16 +209,21 @@ footer {
             color: inherit;
 
             .icon__github,
-            .icon__linkedin {
+            .icon__linkedin,
+            .icon__portfolio {
                 width: 4rem;
                 height: 4rem;
-                border: 1px solid var(--color-6);
-                background-color: var(--color-6);
                 transition: transform .2s linear;
-
+                
                 &:hover {
                     transform: scale(1.2);
                 }
+            }
+            
+            .icon__github,
+            .icon__linkedin{
+                border: 1px solid var(--color-6);
+                background-color: var(--color-6);
             }
 
             .icon__github {
@@ -220,8 +233,11 @@ footer {
             .icon__linkedin {
                 border-radius: 5px;
             }
-        }
 
+            .icon__portfolio {
+                color: var(--color-3);
+            }
+        }
     }
 
     p {
